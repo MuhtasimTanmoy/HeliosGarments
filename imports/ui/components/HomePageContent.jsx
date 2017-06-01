@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-export default class  HomePage extends Component {
+export default class  HomePageContent extends Component {
   constructor() {
     super();
   }
