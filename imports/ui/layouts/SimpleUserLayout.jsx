@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Header from '../components/Header'
+
 
 export default class SimpleUserLayout extends Component {
 
@@ -8,9 +10,13 @@ export default class SimpleUserLayout extends Component {
         return (
         	<div>
 
-		        <div className="content">
+          <Header/>
+
+		        <div className="pusher">
 		            {this.props.content}
 		        </div>
+
+
 	        </div>
         );
     }
