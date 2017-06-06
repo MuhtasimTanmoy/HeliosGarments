@@ -64,6 +64,24 @@ Meteor.methods({
             statusCode: 1,
         }
     },
+    'orders.updateCompletion' (data) {
+        console.log(data);
+
+        if (Meteor.user() != null) {
+
+            Orders.update(data, {
+                $set: {
+                  completed:true,
+                },
+            });
+        } else {
+            throw new Meteor.Error('not-authorized');
+        }
+        return {
+            statusCode: 1,
+        }
+    },
+
     'orders.delete' (id) {
 
         if (Meteor.user() != null) {

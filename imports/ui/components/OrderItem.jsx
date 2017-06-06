@@ -19,6 +19,9 @@
     call(){
       Meteor.call("orders.delete",this.props.item._id);
     }
+    callComplete(){
+      Meteor.call("orders.updateCompletion",this.props.item._id);
+    }
       render() {
           return (
 
@@ -28,7 +31,12 @@
         <div className="header ">{this.props.item.productType } - {this.props.item.productQuantity} pieces</div>
         <div className="ui divider"></div>
 
-        <img src="assets/HeaderLogo.png" width="140" height="140" className="left floated"/>
+        {this.props.item.productType=="Pant" && <img src="assets/pant.png" width="140" height="140" className="left floated"/>}
+        {this.props.item.productType=="Shirt" && <img src="assets/shirt.jpg" width="140" height="140" className="left floated"/>}
+
+        {this.props.item.productType=="Tshirt" && <img src="assets/t-shirt.png" width="140" height="140" className="left floated"/>}
+
+         {this.props.item.productType=="Accessories" && <img src="assets/HeaderLogo.png" width="140" height="140" className="left floated"/>}
         <div className="floated right container">
 
         <p className="fieldName">Shipping Address : {this.props.item.shippingAddress}</p>
@@ -69,9 +77,14 @@
         <div className="extra content">
 
 
-        <button className="right floated ui blue button" onClick={this.call.bind(this)}>
-        Delete
+       <button className="right floated ui red button" onClick={this.call.bind(this)}>
+        {this.props.item.completed==false && <text>Cancel</text>}
+        {this.props.item.completed==true && <text>Delete</text>}
         </button>
+      {this.props.item.completed==false && <button className="right floated ui light blue button" onClick={this.callComplete.bind(this)}>
+        Mark as completed
+      </button>}
+
 
         <p >Order received on : {this.props.item.createdAt.toLocaleDateString('en-GB')}</p>
 

@@ -10,26 +10,7 @@ class  OrderList extends Component {
     super();
   }
 
-  int(){
-    let p;
-    Meteor.call("findAll", {} , function(error, result){
-                    if(error){
-                        console.log("error", error);
-                        this.setState({
-                            error: error.reason,
-                        });
-                    }
-                    if(result){
-                        console.log(result);
-                        p=result.s;
-                        console.log(p);
 
-
-                    }
-                });
-    console.log(this.props.orders);
-    console.log(p);
-  }
   renderOrders(){
     let waiting= <div className="ui segment">
   <div className="ui active inverted dimmer">
@@ -69,7 +50,7 @@ class  OrderList extends Component {
       <div className="ui container paddingTopForHeader center aligned">
 
 
-          <div className="ui black inverted segment"><div className="customFont">List of orders</div></div>
+          <div className="ui black inverted segment"><div className="customFont">List of completed orders</div></div>
 
 
           {this.renderOrders()}
@@ -87,7 +68,7 @@ export default createContainer(  (props) => {
     Meteor.subscribe('orders');
 
     return{
-        orders: Orders.find({createdBy:Meteor.user()._id,completed:false}).fetch(),
+        orders: Orders.find({createdBy:Meteor.user()._id,completed:true}).fetch(),
         user: Meteor.user(),
     };
 }, OrderList);
