@@ -5,6 +5,8 @@ import HomePage from "/imports/ui/pages/HomePage"
 import SignUp from "/imports/ui/pages/SignUp"
 import SignInPage from "/imports/ui/pages/SignInPage"
 import OrderListPage from "/imports/ui/pages/OrderListPage"
+import Test from "/imports/ui/pages/TestPage"
+import DashBoardPage from "/imports/ui/pages/DashBoardPage"
 
 
 import InsertOrderPage from "/imports/ui/pages/InsertOrderPage"
@@ -27,6 +29,22 @@ FlowRouter.route('/', {
         mount(HomePage);
     }
 });
+FlowRouter.route('/test', {
+    name: 'Home',
+    action(params, queryParams) {
+        mount(Test);
+    }
+});
+
+
+FlowRouter.route('/dashboard', {
+    name: 'DashBoard',
+    action(params, queryParams) {
+        mount(DashBoardPage);
+    }
+});
+
+
 
 FlowRouter.route('/signup', {
     name: 'Signup',
@@ -45,7 +63,7 @@ FlowRouter.route('/login', {
 FlowRouter.route('/orderlist', {
     name: 'Order',
     action(params, queryParams) {
-        mount(OrderListPage); 
+        mount(OrderListPage);
     }
 });
 

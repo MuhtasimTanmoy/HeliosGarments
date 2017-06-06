@@ -23,17 +23,15 @@ export default class Header extends Component {
   render(){
     return (
       <div className="ui black inverted large top fixed menu">
-  				<a className="toc item">
-  					<i className="sidebar icon"></i>
-  				</a>
-  				<a href="index.html" className="header item">
-  					<img className="logo" src="assets/images/logo.png"/>
-           
+
+  				<a href="/" className="header item">
+  					<img className="logo" src="assets/HeaderLogo.png"/>
+
   					Helios
   				</a>
 
   				<div className="right menu">
-  					<a className="item" href="#">Help</a>
+  					<a className="item" href="/">Help</a>
 
   					<div className="ui pointing dropdown item">
   						<i className="user icon"></i> My Account <i className="dropdown icon"></i>

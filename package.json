@@ -9,7 +9,9 @@
     "bcrypt": "^1.0.2",
     "meteor-node-stubs": "~0.2.4",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
-    "react-mounter": "^1.2.0"
+    "react-mounter": "^1.2.0",
+    "react-transition-group": "^1.1.3"
   }
 }

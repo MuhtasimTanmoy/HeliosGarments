@@ -33,6 +33,11 @@ export default class  HomePageContent extends Component {
           }.bind(this));
 
   };
+  int(){
+    <img className="ui  image" src="assets/Hlogo.png">
+    <div className="ui segment">Hello Center</div>
+  </img>
+  }
 
   render(){
 
@@ -40,26 +45,22 @@ export default class  HomePageContent extends Component {
 
 
     return (
-      <div className='loginSectionCon'>
+      <div className='ui paddingTopForHeader container '>
+        <div className="ui paddingForImage">
+        <img className="ui image" src="assets/Hlogo.png">
+      </img>
 
-                <form >
-                    <span>Login</span>
-                    <div className='logFieldContainer'>
-                        Username
-                        <input ref="username" type="text" className="loginField" placeholder="Username"/>
-                        <br/>
-                        Password
-                        <input ref="password" type="password" className="loginField" placeholder="Password" />
-                        <br/>
-                    
-                        <div className='two ui buttons'>
-                            <button className="ui blue button newColor">Login</button>
-                        </div>
-                    </div>
-                    <a href="/signup">Create an Account</a>
-                </form>
 
-            </div>
+
+      </div>
+
+</div>
+
+
+
+
+
+
     )
   }
 }

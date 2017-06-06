@@ -65,7 +65,7 @@ Meteor.methods({
     },
     'orders.delete' (id) {
 
-        if (Meteor.user() != null) {
+        if (Meteor.user() == null) {
             Orders.remove(id);
         } else {
             throw new Meteor.Error('not-authorized');

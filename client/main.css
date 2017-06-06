@@ -287,6 +287,22 @@ i.circular.icon {
   text-align: center;
   color: #212121;
 }
+.customFont{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0px;
+  display: block;
+  text-align: center;
+  color: #FFF;
+}
+.customFontWhite{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0px;
+  display: block;
+  text-align: center;
+  color: #212121;
+}
 .loginSectionCon2{
   color: #0c2230;
   background: rgba(255,255,255,0.4);
@@ -328,9 +344,22 @@ i.circular.icon {
   color: #757575;
 }
 .paddingTopForHeader{
-  margin-top: 63px;
+  padding-top: 80px;
 
 }
+.coloredCard{
+  background-color: #0ff
+}
+
+.paddingForImage{
+  padding-top: 200px;
+  padding-left: 360px;
+  width: 160;
+  height: 70
+}
+
+
+
 .login_logo{
     width: 90px;
     border-radius: 50%;
@@ -355,6 +384,13 @@ i.circular.icon {
   display: block;
   text-align: center;
   color: #212121;
+}
+
+.fieldName{
+  font-size :18px;
+  font-weight: 400;
+  display: block;
+  color: #000;
 }
 .statuses{
   height:600px;
@@ -408,4 +444,9 @@ i.circular.icon {
 }
 .hHeight{
     height: 100vh;
+}
+
+.route-appear{
+  opacity: 0;
+  animation: slideUp 0.6s cubic-bezier(0.165,0.84,.44,1);
 }
