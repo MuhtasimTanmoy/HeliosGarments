@@ -58,6 +58,7 @@ export default class StatusInsertForm extends Component {
         deadline = ReactDOM.findDOMNode(this.refs.deadline).value = "";
         specification = ReactDOM.findDOMNode(this.refs.specification).value = "";
         shippingAddress = ReactDOM.findDOMNode(this.refs.shippingAddress).value = "";
+        total=ReactDOM.findDOMNode(this.refs.total).value="";
 
     }
 
@@ -77,6 +78,14 @@ export default class StatusInsertForm extends Component {
         $('.ui.dropdown')
           .dropdown()
         ;
+    }
+
+    checkit(){
+      let budgetPerPiece=ReactDOM.findDOMNode(this.refs.budget).value.trim();
+      let quantity=ReactDOM.findDOMNode(this.refs.quantity).value.trim();
+
+      ReactDOM.findDOMNode(this.refs.total).value=budgetPerPiece*quantity;
+
     }
 
 
@@ -103,13 +112,15 @@ export default class StatusInsertForm extends Component {
                             </select>
 
                             Quantity
-                            <input ref="quantity" type="text" className='loginField'/>
+                            <input ref="quantity" type="number" className='loginField'/>
 
                             Budget
-                            <input ref="budget" type="text" className='loginField'/>
+                            <input ref="budget" type="number" className='loginField' onChange={this.checkit.bind(this)}/>
+                            Total
+                            <input ref="total" type="number" className='loginField'/>
 
                               Deadline
-                              <input ref="deadline" type="text" className='loginField'/>
+                              <input ref="deadline" type="date" className='loginField'/>
 
                           ShippingAddress
                             <textarea id="mytextarea" className="loginField" ref="shippingAddress" placeholder="Address"
