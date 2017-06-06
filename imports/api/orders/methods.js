@@ -12,9 +12,9 @@ Meteor.methods({
 
     'orders.insert' (data) {
 
-        // if (!this.userId) {
-        //     throw new Meteor.Error('not-authorized');
-        // }
+        if (!this.userId) {
+            throw new Meteor.Error('not-authorized');
+        }
         console.log("Hello");
         console.log(data);
 
@@ -65,7 +65,7 @@ Meteor.methods({
     },
     'orders.delete' (id) {
 
-        if (Meteor.user() == null) {
+        if (Meteor.user() != null) {
             Orders.remove(id);
         } else {
             throw new Meteor.Error('not-authorized');

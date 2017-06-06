@@ -59,7 +59,7 @@ class  OrderList extends Component {
     }
       return array;
   }
- 
+
 
 
 
@@ -85,8 +85,9 @@ class  OrderList extends Component {
 
 export default createContainer(  (props) => {
     Meteor.subscribe('orders');
+
     return{
-        orders: Orders.find({}).fetch(),
+        orders: Orders.find({createdBy:Meteor.user()._id}).fetch(),
         user: Meteor.user(),
     };
 }, OrderList);

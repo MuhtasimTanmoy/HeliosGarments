@@ -28,7 +28,7 @@ export default class DashBoard extends Component {
 
                             </a>
 
-                            <a className="teal colored card"  href="/agentreportgallery">
+                            <a className="teal colored card"  href="/completedOrder">
                                 <div className="image iconHolder">
                                     <h2 className="ui center aligned icon header">
                                         <i className="circular inverted teal history icon"></i>

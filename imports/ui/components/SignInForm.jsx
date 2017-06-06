@@ -42,7 +42,7 @@ class LoginForm extends Component {
             }
             else{
 
-                    FlowRouter.go('/orderlist');
+                    FlowRouter.go('/dashboard');
 
 
             }

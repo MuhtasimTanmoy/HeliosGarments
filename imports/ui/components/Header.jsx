@@ -1,6 +1,7 @@
 import React,{Component} from "react";
+import {createContainer} from 'meteor/react-meteor-data';
 
-export default class Header extends Component {
+class Header extends Component {
 
   componentDidMount() {
 	    $('.ui.basic.button')
@@ -20,8 +21,15 @@ export default class Header extends Component {
   constructor() {
     super();
   }
+  logOut(){
+        Meteor.logout();
+        FlowRouter.go('/login');
+
+    }
   render(){
+    console.log(this.props.user);
     return (
+
       <div className="ui black inverted large top fixed menu">
 
   				<a href="/" className="header item">
@@ -31,7 +39,7 @@ export default class Header extends Component {
   				</a>
 
   				<div className="right menu">
-  					<a className="item" href="/">Help</a>
+  					{this.props.user==null && <a className="item" href="/login">Login</a>}
 
   					<div className="ui pointing dropdown item">
   						<i className="user icon"></i> My Account <i className="dropdown icon"></i>
@@ -47,3 +55,11 @@ export default class Header extends Component {
     )
   }
 }
+
+export default createContainer(  (props) => {
+
+    return{
+
+        user: Meteor.user(),
+    };
+}, Header);
