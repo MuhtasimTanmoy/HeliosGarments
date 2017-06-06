@@ -32,6 +32,7 @@
         <div className="floated right container">
 
         <p className="fieldName">Shipping Address : {this.props.item.shippingAddress}</p>
+        <p className="fieldName">Total cost : {this.props.item.totalPrice}</p>
 
         <p className="fieldName">Specification : {this.props.item.specification}</p>
         <p className="fieldName">Expected delivery date : {this.props.item.deadline}</p>

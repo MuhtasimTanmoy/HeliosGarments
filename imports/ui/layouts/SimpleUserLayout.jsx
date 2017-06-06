@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 export default class SimpleUserLayout extends Component {
@@ -16,6 +17,8 @@ export default class SimpleUserLayout extends Component {
 		        <div className="pusher">
 		            {this.props.content}
 		        </div>
+
+            <Footer/>
 
 
 	        </div>

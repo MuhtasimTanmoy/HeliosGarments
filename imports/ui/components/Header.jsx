@@ -40,6 +40,7 @@ class Header extends Component {
 
   				<div className="right menu">
   					{this.props.user==null && <a className="item" href="/login">Login</a>}
+            {this.props.user!=null && <a className="item" href="/dashboard">Dashboard</a>}
 
   					<div className="ui pointing dropdown item">
   						<i className="user icon"></i> My Account <i className="dropdown icon"></i>

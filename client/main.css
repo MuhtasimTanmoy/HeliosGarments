@@ -446,6 +446,10 @@ i.circular.icon {
     height: 100vh;
 }
 
+.blueColor{
+  background-color: #000;
+}
+
 .route-appear{
   opacity: 0;
   animation: slideUp 0.6s cubic-bezier(0.165,0.84,.44,1);

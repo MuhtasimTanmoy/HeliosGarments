@@ -28,9 +28,11 @@ export default class StatusInsertForm extends Component {
             productType: this.state.type,
             productQuantity : ReactDOM.findDOMNode(this.refs.quantity).value.trim(),
             budget : ReactDOM.findDOMNode(this.refs.budget).value.trim(),
+            totalPrice : ReactDOM.findDOMNode(this.refs.total).value.trim(),
             deadline : ReactDOM.findDOMNode(this.refs.deadline).value.trim(),
             specification : ReactDOM.findDOMNode(this.refs.specification).value.trim(),
             shippingAddress : ReactDOM.findDOMNode(this.refs.shippingAddress).value.trim(),
+            completed:false,
         };
 
         console.log(data);
@@ -100,7 +102,7 @@ export default class StatusInsertForm extends Component {
                 <form className="" onSubmit={this.handleSubmit.bind(this)}>
                     <span>Submit Order</span>
                     <div className='logFieldContainer'>
-                        Select Traffic jam level
+                        Select product type:
                         <div className="ui">
                             <select className="ui dropdown loginField" onChange={this.change.bind(this)}>
                                 <option value="">Select Type</option>

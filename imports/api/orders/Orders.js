@@ -29,6 +29,7 @@ Orders.schema = new SimpleSchema({
     productQuantity: { type:Number },
     budget: { type: Number },
     totalPrice:{type:Number},
+    completed:{type:Boolean},
     deadline: { type: Date },
     design: { type: String },
     shippingAddress: {type: String },
