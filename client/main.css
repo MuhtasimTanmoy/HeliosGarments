@@ -3,6 +3,29 @@
     margin-top: 7em;
     margin-bottom: 4em;
 }
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+.hidden.menu {
+    display: none;
+}
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
 .main.container.fluid {
     margin-top: 7em;
     margin-bottom: 4em;
@@ -17,28 +40,7 @@
     border-width: 0px;
     border-color: transparent;
 }
-.ui.menu .item img.logo {
-    margin-right: 1.5em;
-}
-.hidden.menu {
-    display: none;
-}
-.masthead.segment {
-    min-height: 700px;
-    padding: 1em 0em;
-}
-.masthead .logo.item img {
-    margin-right: 1em;
-}
-.masthead .ui.menu .ui.button {
-    margin-left: 0.5em;
-}
-.masthead h1.ui.header {
-    margin-top: 3em;
-    margin-bottom: 0em;
-    font-size: 4em;
-    font-weight: normal;
-}
+
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
