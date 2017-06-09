@@ -8,10 +8,10 @@ export default class DashBoard extends Component {
         return (
 
                           <div className="ui container paddingTopForHeader three cards">
-                            <a className="red colored card"  href="/insertorder">
+                            <a className="green colored card"  href="/insertorder">
                                 <div className="image iconHolder">
                                     <h2 className="ui center aligned icon header">
-                                        <i className="circular inverted red add to calander icon"></i>
+                                        <i className="circular inverted green add to calander icon"></i>
                                         <h3>Place New Order</h3>
                                     </h2>
                                 </div>

@@ -45,8 +45,7 @@ class Header extends Component {
   					<div className="ui pointing dropdown item">
   						<i className="user icon"></i> My Account <i className="dropdown icon"></i>
   						<div className="menu">
-  							<a className="item" href="#">My profile</a>
-  							<a className="item" href="/login">Edit profile</a>
+  							<a className="item" href="/login">My profile</a>
   							<a className="item" onClick={this.logOut}>Logout</a>
   						</div>
   					</div>

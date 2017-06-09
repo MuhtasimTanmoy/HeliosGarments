@@ -5,7 +5,7 @@ import HomePage from "/imports/ui/pages/HomePage"
 import SignUp from "/imports/ui/pages/SignUp"
 import SignInPage from "/imports/ui/pages/SignInPage"
 import OrderListPage from "/imports/ui/pages/OrderListPage"
-import Test from "/imports/ui/pages/TestPage"
+import TestPage from "/imports/ui/pages/TestPage"
 import DashBoardPage from "/imports/ui/pages/DashBoardPage"
 import CompletedOrderListPage from "/imports/ui/pages/CompletedOrderListPage"
 
@@ -41,7 +41,7 @@ FlowRouter.route('/completedOrder', {
 FlowRouter.route('/test', {
     name: 'Home',
     action(params, queryParams) {
-        mount(Test);
+        mount(TestPage);
     }
 });
 

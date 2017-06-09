@@ -47,13 +47,13 @@
 
 
           <div className="ui four steps">
-    <div className="step">
+    <div className="active step">
       <i className="clone icon"></i>
       <div className="content">
         <div className="title">Order Placed</div>
       </div>
     </div>
-    <div className="active step">
+    <div className="disabled step">
       <i className="checkmark box icon"></i>
       <div className="content">
         <div className="title">Order Confirmed</div>
@@ -77,7 +77,7 @@
         <div className="extra content">
 
 
-       <button className="right floated ui red button" onClick={this.call.bind(this)}>
+       <button className="right floated ui basic red button" onClick={this.call.bind(this)}>
         {this.props.item.completed==false && <text>Cancel</text>}
         {this.props.item.completed==true && <text>Delete</text>}
         </button>

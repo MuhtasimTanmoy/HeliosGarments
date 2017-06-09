@@ -96,13 +96,13 @@ export default class StatusInsertForm extends Component {
     render() {
         return (
             <div className='formSectionCon'>
-                <div id="snackbar">Success! Status was successfully added.</div>
+                <div id="snackbar">Success! Order was successfully submitted.</div>
 
 
                 <form className="" onSubmit={this.handleSubmit.bind(this)}>
                     <span>Submit Order</span>
                     <div className='logFieldContainer'>
-                        Select product type:
+                        <p>Select product type:</p>
                         <div className="ui">
                             <select className="ui dropdown loginField" onChange={this.change.bind(this)}>
                                 <option value="">Select Type</option>
@@ -116,7 +116,7 @@ export default class StatusInsertForm extends Component {
                             Quantity
                             <input ref="quantity" type="number" className='loginField'/>
 
-                            Budget
+                            Budget Per Piece
                             <input ref="budget" type="number" className='loginField' onChange={this.checkit.bind(this)}/>
                             Total
                             <input ref="total" type="number" className='loginField'/>

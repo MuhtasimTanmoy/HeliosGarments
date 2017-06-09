@@ -69,7 +69,7 @@ class  OrderList extends Component {
       <div className="ui container paddingTopForHeader center aligned">
 
 
-          <div className="ui black inverted segment"><div className="customFont">List of orders</div></div>
+          <div className="ui black inverted segment"><div className="customFont">List of current orders</div></div>
 
 
           {this.renderOrders()}

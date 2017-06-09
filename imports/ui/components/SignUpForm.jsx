@@ -73,7 +73,7 @@ export default class SignUpForm extends Component {
         return (
             <div className='formSectionCon'>
 
-                <div id="snackbar">Success! Reporter was successfully added.</div>
+                <div id="snackbar">Success! Customer was successfully added.</div>
                 <form className="" onSubmit={this.handleSubmit.bind(this)}>
                     <span>Sign Up</span>
                     <div className='logFieldContainer'>
@@ -103,7 +103,7 @@ export default class SignUpForm extends Component {
 
                             {this.renderError()}
                             <div className='two ui buttons'>
-                                <button className="ui blue button newColor">Add</button>
+                                <button className="ui blue button newColor">Sign Up</button>
                             </div>
                         </div>
 
