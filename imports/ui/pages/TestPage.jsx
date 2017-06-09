@@ -4,7 +4,7 @@ import Test from "../components/test"
 
 import SimpleUserLayout from "../layouts/SimpleUserLayout"
 
-export default class TestPage extends Component {
+export default class SignUp extends Component {
   constructor() {
     super();
   }

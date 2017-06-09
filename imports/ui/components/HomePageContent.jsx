@@ -19,7 +19,7 @@ export default class  HomePageContent extends Component {
       Meteor.call("orders.insert", data , function(error, result){
               if(error){
 
-                  console.log("dsdsdsdf")
+                  console.log("errors found")
               }
               if(result){
 
