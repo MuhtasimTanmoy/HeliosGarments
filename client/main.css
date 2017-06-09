@@ -18,47 +18,7 @@
     font-size: 4em;
     font-weight: normal;
 }
-.hidden.menu {
-    display: none;
-}
-.masthead.segment {
-    min-height: 700px;
-    padding: 1em 0em;
-}
 
-.main.container.fluid {
-    margin-top: 7em;
-    margin-bottom: 4em;
-    padding: 0px 20px;
-}
-.ui.menu.secondary .item img.logo {
-    margin-top: -12px;
-    margin-bottom: -12px;
-    margin-right: 1.5em;
-}
-.ui.secondary.inverted.pointing.menu {
-    border-width: 0px;
-    border-color: transparent;
-}
-
-.masthead h2 {
-    font-size: 1.7em;
-    font-weight: normal;
-}
-
-.ui.vertical.stripe {
-    padding: 8em 0em;
-}
-.ui.vertical.stripe h3 {
-    font-size: 2em;
-}
-.ui.vertical.stripe .button + h3,
-.ui.vertical.stripe p + h3 {
-    margin-top: 3em;
-}
-.ui.vertical.stripe .floated.image {
-    clear: both;
-}
 .ui.vertical.stripe p {
     font-size: 1.33em;
 }
@@ -204,6 +164,49 @@ i.circular.icon {
 }
 .text.pink {
   color: #D9499A!important;
+}
+
+
+.hidden.menu {
+    display: none;
+}
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
+.main.container.fluid {
+    margin-top: 7em;
+    margin-bottom: 4em;
+    padding: 0px 20px;
+}
+.ui.menu.secondary .item img.logo {
+    margin-top: -12px;
+    margin-bottom: -12px;
+    margin-right: 1.5em;
+}
+.ui.secondary.inverted.pointing.menu {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+    clear: both;
 }
 .text.orange {
   color: #E07B53!important;
