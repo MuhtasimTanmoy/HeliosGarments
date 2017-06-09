@@ -13,9 +13,9 @@ class  OrderList extends Component {
 
   renderOrders(){
     let waiting= <div className="ui segment">
-  <div className="ui active inverted dimmer">
-    <div className="ui text loader">Loading</div>
-  </div>
+      <div className="ui grey segment">
+        <div className="ui text"><p className="customText">No orders found</p></div>
+      </div>
   <p></p>
 </div>;
 
